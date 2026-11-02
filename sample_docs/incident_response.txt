@@ -1,0 +1,7 @@
+Sample Guide: First Response to an Incident
+
+When an alert fires, acknowledge it first, then check the service health dashboard before changing anything. Many alerts clear on their own within a few minutes; the first job is to confirm whether users are actually affected.
+
+If users are affected, open an incident record, state what is broken and since when, and keep a running timeline of every action taken. Rollback is preferred over forward-fixing during an active incident: return to the last known good state, then investigate the cause once the pressure is off.
+
+After the incident, write up what happened within two business days: the trigger, the impact, the fix, and one or two concrete follow-ups that would prevent the same failure or catch it earlier next time.

@@ -1,0 +1,7 @@
+Sample Runbook: Reporting Database Restart
+
+To restart the reporting database service, first confirm no batch jobs are running against it, then stop the service gracefully and wait for active connections to drain. Start the service again and watch the startup log until it reports that it is accepting connections.
+
+After a restart, verify the database is healthy by running the standard smoke checks: confirm the service responds on its port, run a simple read query against a small reference table, and check that the last scheduled job completed normally. If any smoke check fails, do not reopen traffic; escalate with the startup log attached.
+
+Planned restarts should be announced to downstream consumers at least one business day ahead, because dashboards and scheduled reports read from this database during business hours.

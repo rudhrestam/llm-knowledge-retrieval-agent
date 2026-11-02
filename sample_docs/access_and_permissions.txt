@@ -1,0 +1,7 @@
+Sample Guide: Access and Permissions
+
+New team members request access through the standard access request form. Read access to team documentation and dashboards is usually approved by the team lead within one business day. Write access to production systems requires a second approver and a short justification.
+
+Access is reviewed every quarter. Accounts that have not been used in 90 days are flagged, and owners are asked to confirm they still need them. Shared accounts are not permitted; every action in production must be attributable to an individual.
+
+If you are locked out, do not ask a colleague to run commands for you. Use the account recovery flow, and if that fails, contact the service desk with your ticket number so the lockout can be traced in the audit log.

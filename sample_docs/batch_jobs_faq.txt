@@ -1,0 +1,7 @@
+Sample FAQ: Nightly Batch Jobs
+
+The nightly batch window opens at 1:00 AM and all critical jobs are expected to finish within three hours. Jobs are orchestrated so that independent pipelines run in parallel, while dependent jobs wait for their inputs to land and pass validation.
+
+If a batch job fails, check the job log for the first error rather than the last one, because downstream steps often fail as a knock-on effect. A failed validation step usually means the input file was incomplete or malformed; quarantine the file, notify the sending team, and rerun only after a corrected file arrives.
+
+Rerunning a job is safe because each load is idempotent: the target partition is cleared and reloaded, so a rerun never creates duplicate rows. Never load a partial file to "catch up" — a complete rerun is faster than cleaning up bad data later.
