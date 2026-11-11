@@ -1,5 +1,7 @@
 # LLM Knowledge Retrieval Agent (Demo)
 
+![CI](https://github.com/rudhrestam/llm-knowledge-retrieval-agent/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A small, runnable demo of a knowledge-retrieval agent for an operations team: ask a question in plain language, get back the best-matching passages from a set of runbooks and FAQs — with sources cited, and nothing invented.
 
 > This is a representative demo of patterns used in production systems, built with sample documents and original code. It contains no employer code, data, or internal details.
@@ -44,7 +46,7 @@ Example questions to try: restarting a service, batch failures, access requests,
 
 ## Tech stack
 
-Python · scikit-learn (TF-IDF, cosine similarity) · sample text documents
+Python 3.10+ · scikit-learn (TF-IDF, cosine similarity) · sample text documents
 
 ## What it demonstrates
 
